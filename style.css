@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+nav {
+    background: #333;
+    padding: 0.5em 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1em;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+nav ul li a:hover, nav ul li a:focus {
+    background: #555;
+}
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.carousel {
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 0.2em 0.6em;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.carousel-btn.left {
+    left: 10px;
+}
+.carousel-btn.right {
+    right: 10px;
+}
+.carousel-btn:hover, .carousel-btn:focus {
+    background: rgba(0,0,0,0.7);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button:hover, .contact-form button:focus {
+    background: #555;
+} 
